@@ -12,6 +12,17 @@ tmp/*.zip
 # Common local logs
 *.log
 
+# Environment and secret files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+
 # Keep template folder in repo but exclude its sensitive contents
 template/**
 !template/.gitkeep
@@ -22,3 +33,6 @@ template/**
 *.xls
 *.xlsx
 *.xlsm
+
+# Temporary text dumps
+tmp/*.txt
