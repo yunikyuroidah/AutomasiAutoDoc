@@ -1,0 +1,10 @@
+{
+  "name": "automasi-autodoc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AutoDoc demo workspace",
+  "scripts": {
+    "dev": "php -S 127.0.0.1:8080 -t .",
+    "dev:8081": "php -S 127.0.0.1:8081 -t ."
+  }
+}

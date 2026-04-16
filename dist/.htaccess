@@ -1,0 +1,30 @@
+# .htaccess for InfinityFree hosting
+# Enable basic rewrite engine
+RewriteEngine On
+
+# Redirect all requests to index.php (if needed for PHP front controller)
+# Uncomment if using a single entry point
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^ index.php [QSA,L]
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Prevent directory listing
+Options -Indexes
+
+# Allow access to assets
+<Directory "assets">
+    Allow from all
+    Require all granted
+</Directory>
+
+# Set proper MIME types for common assets
+AddType image/svg+xml .svg
+AddType application/font-woff2 .woff2
+
+# Enable CORS for assets (optional)
+<FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css)$">
+    Header set Access-Control-Allow-Origin "*"
+</FilesMatch>

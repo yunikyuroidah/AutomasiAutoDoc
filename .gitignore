@@ -1,0 +1,24 @@
+# Local Python environment
+.venv/
+
+# Generated exports
+storage/exports/
+
+# Temporary generated artifacts
+tmp/gen_dp/
+tmp_docx/
+tmp/*.zip
+
+# Common local logs
+*.log
+
+# Keep template folder in repo but exclude its sensitive contents
+template/**
+!template/.gitkeep
+
+# Never commit office source files
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.xlsm
