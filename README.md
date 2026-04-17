@@ -10,8 +10,6 @@ Alasan:
 - File template dokumen dapat mengandung informasi sensitif (metadata, identitas instansi, format dokumen internal).
 - Untuk keamanan data, file `.doc/.docx/.xls/.xlsx/.xlsm` tidak disertakan di repository.
 
-Silakan simpan template dokumen asli hanya di lingkungan lokal/internal.
-
 ## Prasyarat
 
 - PHP 8.2+
@@ -38,9 +36,6 @@ Akses aplikasi di:
 - Username: `dummy_admin`
 - Password: `dummy_admin_123`
 
-- Username: `dummy_operator`
-- Password: `dummy_operator_123`
-
 ## Setup Database (Jika Belum Ada)
 
 ```powershell
@@ -53,3 +48,15 @@ cmd /c "\"$mysql\" -uroot autodoc_demo_db < database\autodoc_demo_db.sql"
 ## Struktur Publik Repo
 
 Repository publik hanya menyertakan source code aplikasi dan data dummy. Folder `template/` dipertahankan kosong untuk menjaga kompatibilitas struktur direktori.
+
+## Dokumentasi Tampilan
+
+| Halaman | Screenshot |
+| --- | --- |
+| Beranda | ![Beranda](Dokumentasi%20Automation/beranda.png) |
+| Login | ![Login](Dokumentasi%20Automation/login.png) |
+| Form Utama - Bagian 1 | ![Form Utama 1](Dokumentasi%20Automation/FormUtama1.png) |
+| Form Utama - Bagian 2 | ![Form Utama 2](Dokumentasi%20Automation/FormUtama2.png) |
+| Form Utama - Bagian 3 | ![Form Utama 3](Dokumentasi%20Automation/FormUtama3.png) |
+| Master Data - Bagian 1 | ![Master 1](Dokumentasi%20Automation/Master1.png) |
+| Master Data - Bagian 2 | ![Master 2](Dokumentasi%20Automation/Master2.png) |
